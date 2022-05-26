@@ -38,3 +38,13 @@ export interface ExpenseFilterProps {
 export interface AddExpenseButtonProps {
   onToggle: () => void;
 }
+
+export interface ChartProps {
+  dataPoints: ChartBarProps[];
+}
+
+export interface ChartBarProps {
+  value: number;
+  maxValue: number;
+  label: string;
+}
